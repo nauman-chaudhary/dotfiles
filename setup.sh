@@ -9,6 +9,8 @@ files=".zshrc"
 
 # assumes git is installed
 git config --global core.excludesfile $dir/.gitignore_global
+git config --global --add --bool push.autoSetupRemote true
+
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
